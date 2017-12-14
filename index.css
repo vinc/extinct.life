@@ -1,0 +1,49 @@
+body {
+  font-family: "Alegreya", serif;
+  font-size: 24px;
+}
+
+h1 {
+  font-family: "Alegreya", serif;
+}
+
+.bg-light-brown {
+  background-color: #ffd;
+}
+
+.bg-dark-brown {
+  background-color: #432;
+}
+
+.bg-black {
+  background-color: #111;
+}
+
+.fullscreen {
+  min-height: 100vh;
+}
+
+.container.narrow {
+  max-width: 30em;
+}
+
+.bg-light-brown h1 {
+  font-family: "Alegreya", serif;
+  color: #332;
+}
+
+a {
+  border-bottom: solid 2px rgba(17, 170, 100, 0.2);
+  color: rgba(17, 170, 100, 1.0);
+}
+a:hover {
+  border-bottom: solid 2px rgba(17, 170, 170, 0.5);
+  color: rgba(17, 170, 170, 1.0);
+  text-decoration: none;
+}
+
+img.cover {
+  max-height: 75vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
