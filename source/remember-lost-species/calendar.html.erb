@@ -1,8 +1,18 @@
 ---
-title: Remember lost species
 pageable: true
-per_page: 10
+title: Archive
 ---
+
+<h2>Lost species remembered on
+  <% case page_type
+     when "day" %>
+    <%= Date.new(year, month, day).strftime("%Y-%m-%d") %>
+  <% when "month" %>
+    <%= Date.new(year, month, 1).strftime("%Y-%m") %>
+  <% when "year" %>
+    <%= year %>
+  <% end %>
+</h2>
 
 <% if paginate && num_pages > 1 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>

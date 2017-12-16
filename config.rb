@@ -33,11 +33,13 @@ page "/*.txt", layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def ls(dir)
+    sitemap.resources.select do |resource|
+      resource.path.start_with?(dir)
+    end
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
@@ -59,7 +61,25 @@ set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"
 set :images_dir, "images"
 
-proxy "index.html", "/remember-lost-species/dodo.html"
+activate :blog do |blog|
+  blog.prefix = "remember-lost-species"
+  # blog.permalink = "{year}/{month}/{day}/{title}.html"
+  # blog.sources = "{year}-{month}-{day}-{title}.html"
+  # blog.taglink = "tags/{tag}.html"
+  blog.layout = "layouts/blog"
+  # blog.summary_separator = /(READMORE)/
+  # blog.summary_length = 250
+  # blog.year_link = "{year}.html"
+  # blog.month_link = "{year}/{month}.html"
+  # blog.day_link = "{year}/{month}/{day}.html"
+  # blog.default_extension = ".markdown"
+  # blog.tag_template = "blog/tag.html"
+  blog.calendar_template = "remember-lost-species/calendar.html"
+  # blog.paginate = true
+  # blog.per_page = 10
+  # blog.page_link = "page/{num}"
+  blog.publish_future_dated = true
+end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
@@ -68,10 +88,17 @@ activate :deploy do |deploy|
   deploy.user          = "root"
 end
 
-helpers do
-  def ls(dir)
-    sitemap.resources.select do |resource|
-      resource.path.start_with?(dir)
+ready do
+  sitemap.resources.each do |resource|
+    next unless resource.data.title.nil?
+
+    case resource.locals["page_type"]
+    when "tag"
+      resource.data.title = resource.locals["tagname"].capitalize
+    when "year", "month", "day"
+      resource.data.title = resource.locals[resource.locals["page_type"]].to_s
     end
   end
 end
+
+proxy "index.html", "/remember-lost-species/2018-01-01-dodo.html", layout: :blog

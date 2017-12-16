@@ -1,15 +1,14 @@
 ---
-layout: species
 title: Newton's parakeet
 image: newton_parakeet_1000x1000.jpg
 extinct: since 1875
 date: 2018-01-15
 ---
 
-[Newton's parakeet](/remember-lost-species/newton-parakeet) (Psittacula exsul),
-also known as the Rodrigues parakeet or Rodrigues ring-necked parakeet, is an
-extinct species of parrot that was endemic to the Mascarene island of
-[Rodrigues]() in the western Indian Ocean.
+[Newton's parakeet](/remember-lost-species/2018/01/15/newton-parakeet/)
+(Psittacula exsul), also known as the Rodrigues parakeet or Rodrigues
+ring-necked parakeet, is an extinct species of parrot that was endemic to the
+Mascarene island of [Rodrigues](#) in the western Indian Ocean.
 
 The bird became scarce due to deforestation and perhaps hunting, but it is
 thought that it was finally wiped out by a series of cyclones and storms that
