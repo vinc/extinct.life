@@ -3,16 +3,16 @@ pageable: true
 title: Archive
 ---
 
-<h2>Lost species remembered on
+<p>Lost species remembered on
   <% case page_type
      when "day" %>
-    <%= Date.new(year, month, day).strftime("%Y-%m-%d") %>
+    <%= Date.new(year, month, day).strftime("%Y-%m-%d") %>:
   <% when "month" %>
-    <%= Date.new(year, month, 1).strftime("%Y-%m") %>
+    <%= Date.new(year, month, 1).strftime("%Y-%m") %>:
   <% when "year" %>
-    <%= year %>
+    <%= year %>:
   <% end %>
-</h2>
+</p>
 
 <% if paginate && num_pages > 1 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
