@@ -1,3 +1,5 @@
+ignore "**/.*swp"
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -64,4 +66,12 @@ activate :deploy do |deploy|
   deploy.host          = "root@extinct.life"
   deploy.path          = "/home/user-data/www/extinct.life"
   deploy.user          = "root"
+end
+
+helpers do
+  def ls(dir)
+    sitemap.resources.select do |resource|
+      resource.path.start_with?(dir)
+    end
+  end
 end

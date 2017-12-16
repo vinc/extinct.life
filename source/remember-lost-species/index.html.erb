@@ -1,0 +1,11 @@
+---
+title: Remember lost species
+---
+
+<ul>
+  <% ls("remember-lost-species").each do |resource| %>
+    <% if resource.data.date.present? %>
+      <li><%= link_to resource.data.title, resource.url %> (<%= resource.data.date %>)</li>
+    <% end %>
+  <% end %>
+</ul>
