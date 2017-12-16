@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= [current_page.data.title, "Extinct.life"].compact.uniq.join(" - ") %></title>
+
+    <%= stylesheet_link_tag "main.bundle" %>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  </head>
+  <body>
+    <section id="description" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-dark-brown text-light">
+      <div class="container narrow py-2 py-sm-4">
+        <h1 class="mb-5 text-center"><%= current_page.data.title %></h1>
+        <%= yield %>
+      </div>
+      <footer class="mt-auto">
+        <p class="text-center mb-1">Built with &hearts; by <a href="https://vinc.cc">vinc</a>. Code licensed <a href="https://github.com/vinc/extinct.life/LICENSE">MIT</a>.</p>
+      </footer>
+    </section>
+    <%= javascript_include_tag "main.bundle" %>
+  </body>
+</html>

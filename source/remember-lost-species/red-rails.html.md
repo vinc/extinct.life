@@ -1,0 +1,22 @@
+---
+layout: species
+title: Red rails
+image: red_rails_1000x1000.jpg
+extinct: since 1700
+date: 2018-01-22
+---
+
+[Red rails](/remember-lost-species/red-rails) (Aphanapteryx bonasia) is an extinct species of
+flightless rail. It was endemic to the [Mascarene island]() of Mauritius, east
+of Madagascar in the Indian Ocean.
+
+Human hunters took advantage of an attraction red rails had to red objects by
+using coloured cloth to lure the birds so that they could be beaten with
+sticks.
+
+In addition to hunting pressure by humans, the fact that the red rail nested on
+the ground made it vulnerable to pigs and other introduced animals, which ate
+their eggs and young, probably contributing to its extinction.
+
+Illustration by [John Gerrard Keulemans](https://ia800201.us.archive.org/BookReader/BookReaderImages.php?zip=/20/items/extinctbirdsatte00roth/extinctbirdsatte00roth_jp2.zip&file=extinctbirdsatte00roth_jp2/extinctbirdsatte00roth_0349.jp2&scale=1&rotate=0).
+Read more at [Wikipedia](https://en.wikipedia.org/wiki/Red_rail).

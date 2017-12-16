@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= [current_page.data.title, "Extinct.life"].compact.uniq.join(" - ") %></title>
+
+    <%= stylesheet_link_tag "main.bundle" %>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  </head>
+  <body>
+    <section id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown">
+      <nav class="navbar navbar-light justify-content-start mb-auto" style="width:100%">
+        <a class="text-muted mr-3" href="/">Extinct.life</a>
+        <span class="text-muted" style="margin-bottom:2px">Each week we revive the memory of a lost species.</span>
+        <span class="text-muted ml-auto" style="margin-bottom:2px"><%= current_page.data.date %></span>
+      </nav>
+      <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
+        <img src="/images/<%= current_page.data.image %>" class="img-fluid img-thumbnail rounded cover">
+        <h1 class="mt-3"><%= current_page.data.title %></h1>
+      </div>
+    </section>
+    <section id="description" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-dark-brown text-light">
+      <div class="container narrow py-2 py-sm-4">
+        <h1 class="text-center mt-3 mb-5">Extinct <%= current_page.data.extinct %>.</h1>
+        <%= yield %>
+      </div>
+    </section>
+    <section class="fullscreen d-flex flex-column justify-content-center align-items-center bg-black text-light">
+      <div class="container narrow py-2 py-sm-4">
+        <h1 class="text-center mt-3 mb-5">Every day, up to 150 species are lost.</h1>
+        <p>We are currently experiencing the greatest wave of extinctions since the disappearance of the dinosaurs. Extinction rates are rising by a factor of up to 1,000 above natural rates according to the <a href="https://www.cbd.int/doc/speech/2007/sp-2007-05-22-es-en.pdf">U.N. Convention on Biological Diversity</a>.</p>
+        <p>The single most important cause? <a href="https://en.wikipedia.org/wiki/Human_impact_on_the_environment">Human activities</a>.</p>
+      </div>
+    </section>
+    <section class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown">
+      <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
+        <div class="row">
+          <div class="col-md">
+            <div class="text-center">
+              <i data-feather="search"></i>
+            </div>
+            <p>We invite you to pick a new <a href="/remember-lost-species">species</a> every week, learn about its life, and search for the causes of its extinction.</p>
+          </div>
+          <div class="col-md">
+            <div class="text-center">
+              <i data-feather="eye"></i>
+            </div>
+            <p>Understanding a problem is the first step to fix it. Many more <a href="http://www.iucnredlist.org/">endangered species</a> can still be saved.</p>
+          </div>
+          <div class="col-md">
+            <div class="text-center">
+              <i data-feather="shield"></i>
+            </div>
+            <p>The actions we take to <a href="/protect-biodiversity">help biodiversity</a> can mean a great deal to the future of life on this planet.</p>
+          </div>
+        </div>
+        <h1 class="text-center mt-5">Remember the <a href="/remember-lost-species">lost species</a>.</h1>
+        <h1 class="text-center mb-5">Protect <a href="/protect-biodiversity">biodiversity</a>.</h1>
+      </div>
+      <footer class="mt-auto">
+        <p class="text-center text-muted mb-1">Built with &hearts; by <a href="https://vinc.cc">vinc</a>. Code licensed <a href="https://github.com/vinc/extinct.life/LICENSE">MIT</a>.</p>
+      </footer>
+    </section>
+    <%= javascript_include_tag "main.bundle" %>
+  </body>
+</html>

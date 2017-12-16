@@ -1,0 +1,14 @@
+---
+layout: species
+title: Haast's eagle
+image: haast_eagle_1000x1000.jpg
+extinct: around 1400
+date: 2018-02-05
+---
+
+The [Haast's eagle](/remember-lost-species/haast-eagle) (Harpagornis moorei) is an extinct species of eagle that once lived in the [South Island](/map) of New Zealand.
+
+Haast's eagle became extinct around 1400, after the [moa](/remember-lost-species/giant-moa) were hunted to extinction by the first Maori.
+
+Illustration by [John Megahan](http://journals.plos.org/plosbiology/article/figure?id=10.1371/journal.pbio.0030020.g001).
+Read more at [Wikipedia](https://en.wikipedia.org/wiki/Haast's_eagle).
