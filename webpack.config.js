@@ -1,24 +1,24 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var Clean = require('clean-webpack-plugin');
+var webpack = require("webpack");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var Clean = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: './assets/javascripts/main.js'
+    main: "./assets/javascripts/main.js"
   },
 
   resolve: {
     modules: [
-      __dirname + '/assets/javascripts',
-      __dirname + '/assets/stylesheets',
-      __dirname + '/node_modules',
+      __dirname + "/assets/javascripts",
+      __dirname + "/assets/stylesheets",
+      __dirname + "/node_modules",
     ],
-    extensions: ['.js', '.css', '.scss']
+    extensions: [".js", ".css", ".scss"]
   },
 
   output: {
-    path: __dirname + '/.tmp/dist',
-    filename: 'assets/javascripts/[name].bundle.js',
+    path: __dirname + "/.tmp/dist",
+    filename: "assets/javascripts/[name].bundle.js",
   },
 
   module: {
@@ -31,15 +31,15 @@ module.exports = {
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
+          fallback: "style-loader",
           use: [
-            'css-loader',
+            "css-loader",
             {
-              loader: 'postcss-loader',
+              loader: "postcss-loader",
               options: {
                 plugins: function () {
                   return [
-                    require('autoprefixer')
+                    require("autoprefixer")
                   ];
                 }
               }
@@ -47,22 +47,30 @@ module.exports = {
           ]}),
       },
       {
+        test: /\.woff$|.woff2$/,
+        loader: "file-loader",
+          options: {
+            name: "assets/fonts/[name].[ext]",
+            publicPath: "../../"
+        },
+      },
+      {
         test: /\.scss$|.sass$/,
         loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
+          fallback: "style-loader",
           use: [
-            'css-loader',
+            "css-loader",
             {
-              loader: 'postcss-loader',
+              loader: "postcss-loader",
               options: {
                 plugins: function () {
                   return [
-                    require('autoprefixer')
+                    require("autoprefixer")
                   ];
                 }
               }
             },
-            'sass-loader'
+            "sass-loader"
           ]
         }),
       }
@@ -74,11 +82,11 @@ module.exports = {
     // inside your code for any environment checks; UglifyJS will automatically
     // drop any unreachable code.
     new webpack.DefinePlugin({
-      'process.env': {
+      "process.env": {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
     }),
-    new Clean(['.tmp']),
+    new Clean([".tmp"]),
     new ExtractTextPlugin("assets/stylesheets/[name].bundle.css"),
   ],
 };
