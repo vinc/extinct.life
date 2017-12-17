@@ -81,6 +81,8 @@ activate :blog do |blog|
   blog.publish_future_dated = true
 end
 
+activate :asset_hash
+
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
   deploy.host          = "root@extinct.life"
