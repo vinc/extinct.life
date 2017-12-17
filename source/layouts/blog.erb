@@ -19,18 +19,18 @@
   </head>
   <body>
     <article>
-      <section id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown" style="background:url(/images/thumbnails/2000x2000_<%= current_page.data.image %>.jpg) no-repeat top center fixed;background-size:cover">
+      <header id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown" style="background:url(/images/thumbnails/2000x2000_<%= current_page.data.image %>.jpg) no-repeat top center fixed;background-size:cover">
         <nav class="navbar navbar-expand-md navbar-light justify-content-start mb-auto">
           <a class="text-muted mr-3" href="/">Extinct.life</a>
           <div class="collapse navbar-collapse">
             <span class="text-muted" style="margin-bottom:2px">Each week we revive the memory of a lost species.</span>
           </div>
-          <span class="text-muted ml-auto" style="margin-bottom:2px"><%= current_page.data.date %></span>
+          <time class="text-muted ml-auto" style="margin-bottom:2px"><%= current_page.data.date %></time>
         </nav>
         <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
           <h1><%= current_page.data.title %></h1>
         </div>
-      </section>
+      </header>
       <section id="description" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown">
         <div class="container narrow py-2 py-sm-4">
           <h2 class="text-center mt-4 mb-5">Extinct <%= current_page.data.extinct %>.</h2>
