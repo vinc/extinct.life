@@ -28,7 +28,7 @@
           <h2 class="text-center mt-4 mb-5">Extinct <%= current_page.data.extinct %>.</h2>
           <%= yield %>
           <div class="text-center mt-5 mb-4">
-            <img src="/images/thumbnails/1000x1000_<%= current_page.data.image %>.jpg" class="img-fluid img-thumbnail rounded cover">
+            <img src="/images/thumbnails/1000x1000_<%= current_page.data.image %>.jpg" alt="<%= current_page.data.title %>" class="img-fluid img-thumbnail rounded cover">
           </div>
         </div>
       </section>
