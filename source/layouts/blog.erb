@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= [current_page.data.title, "Extinct.life"].compact.uniq.join(" - ") %></title>
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rememberspecies" />
+    <meta name="twitter:creator" content="@vinc686" />
+    <meta property="og:url" content="https://extinct.life<%= current_page.url %>" />
+    <meta property="og:image" content="https://extinct.life<%= image_path("thumbnails/2000x2000_#{current_page.data.image}.jpg") %>" />
+    <meta property="og:title" content="<%= current_page.data.title %>" />
+    <meta property="og:description" content="This week we remember the <%= current_page.data.title %>" />
+
     <%= stylesheet_link_tag "main.bundle" %>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
