@@ -10,28 +10,32 @@
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
-    <section id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown">
-      <nav class="navbar navbar-expand-md navbar-light justify-content-start mb-auto" style="width:100%">
-        <a class="text-muted mr-3" href="/">Extinct.life</a>
-        <div class="collapse navbar-collapse">
-          <span class="text-muted" style="margin-bottom:2px">Each week we revive the memory of a lost species.</span>
+    <article>
+      <section id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown" style="background:url(/images/<%= current_page.data.image %>.jpg) no-repeat top center fixed;background-size:cover">
+        <nav class="navbar navbar-expand-md navbar-light justify-content-start mb-auto">
+          <a class="text-muted mr-3" href="/">Extinct.life</a>
+          <div class="collapse navbar-collapse">
+            <span class="text-muted" style="margin-bottom:2px">Each week we revive the memory of a lost species.</span>
+          </div>
+          <span class="text-muted ml-auto" style="margin-bottom:2px"><%= current_page.data.date %></span>
+        </nav>
+        <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
+          <h1 class="mt-3"><%= current_page.data.title %></h1>
         </div>
-        <span class="text-muted ml-auto" style="margin-bottom:2px"><%= current_page.data.date %></span>
-      </nav>
-      <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
-        <img src="/images/<%= current_page.data.image %>" class="img-fluid img-thumbnail rounded cover">
-        <h1 class="mt-3"><%= current_page.data.title %></h1>
-      </div>
-    </section>
-    <section id="description" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-dark-brown text-light">
+      </section>
+      <section id="description" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown">
+        <div class="container narrow py-2 py-sm-4">
+          <h2 class="text-center mt-4 mb-5">Extinct <%= current_page.data.extinct %>.</h2>
+          <%= yield %>
+          <div class="text-center mt-5 mb-4">
+            <img src="/images/<%= current_page.data.image %>_1000x1000.jpg" class="img-fluid img-thumbnail rounded cover">
+          </div>
+        </div>
+      </section>
+    </article>
+    <section class="d-flex flex-column justify-content-center align-items-center bg-black text-light">
       <div class="container narrow py-2 py-sm-4">
-        <h2 class="text-center mt-3 mb-5">Extinct <%= current_page.data.extinct %>.</h2>
-        <%= yield %>
-      </div>
-    </section>
-    <section class="fullscreen d-flex flex-column justify-content-center align-items-center bg-black text-light">
-      <div class="container narrow py-2 py-sm-4">
-        <h2 class="text-center mt-3 mb-5">Every day, up to 150 species are lost.</h2>
+        <h2 class="text-center mt-4 mb-5">Every day, up to 150 species are lost.</h2>
         <p>We are currently experiencing the greatest wave of extinctions since the disappearance of the dinosaurs. Extinction rates are rising by a factor of up to 1,000 above natural rates according to the <a href="https://www.cbd.int/doc/speech/2007/sp-2007-05-22-es-en.pdf">U.N. Convention on Biological Diversity</a>.</p>
         <p>The single most important cause? <a href="https://en.wikipedia.org/wiki/Human_impact_on_the_environment">Human activities</a>.</p>
       </div>

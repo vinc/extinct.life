@@ -1,6 +1,6 @@
 ---
 title: Thylacine
-image: thylacine_1000x1000.jpg
+image: thylacine
 extinct: since 1936
 date: 2018-02-12
 ---
@@ -18,5 +18,5 @@ devil. Intensive hunting encouraged by bounties is generally blamed for its
 extinction, but other contributing factors may have been disease, the
 introduction of dogs, and human encroachment into its habitat.
 
-Photography from the [National Archives of Australia](http://www.naa.gov.au/about-us/media/images/records-about-tasmania/image03.aspx).
 Read more at [Wikipedia](https://en.wikipedia.org/wiki/Thylacine).
+Photography from the [National Archives of Australia](http://www.naa.gov.au/about-us/media/images/records-about-tasmania/image03.aspx).
