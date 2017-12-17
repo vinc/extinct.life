@@ -11,7 +11,7 @@
   </head>
   <body>
     <article>
-      <section id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown" style="background:url(/images/<%= current_page.data.image %>.jpg) no-repeat top center fixed;background-size:cover">
+      <section id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown" style="background:url(/images/thumbnails/2000x2000_<%= current_page.data.image %>.jpg) no-repeat top center fixed;background-size:cover">
         <nav class="navbar navbar-expand-md navbar-light justify-content-start mb-auto">
           <a class="text-muted mr-3" href="/">Extinct.life</a>
           <div class="collapse navbar-collapse">
@@ -28,7 +28,7 @@
           <h2 class="text-center mt-4 mb-5">Extinct <%= current_page.data.extinct %>.</h2>
           <%= yield %>
           <div class="text-center mt-5 mb-4">
-            <img src="/images/<%= current_page.data.image %>_1000x1000.jpg" class="img-fluid img-thumbnail rounded cover">
+            <img src="/images/thumbnails/1000x1000_<%= current_page.data.image %>.jpg" class="img-fluid img-thumbnail rounded cover">
           </div>
         </div>
       </section>
