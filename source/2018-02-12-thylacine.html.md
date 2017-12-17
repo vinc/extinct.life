@@ -5,7 +5,7 @@ extinct: since 1936
 date: 2018-02-12
 ---
 
-The [Thylacine](/remember-lost-species/2018/02/12/thylacine/) (Thylacinus
+The [Thylacine](/2018/02/12/thylacine/) (Thylacinus
 cynocephalus) was the largest known carnivorous marsupial of modern times.
 Native to continental Australia, [Tasmania](#) and New Guinea, it is believed
 to have become extinct in the 20th century. It was the last extant member of

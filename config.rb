@@ -62,7 +62,7 @@ set :js_dir, "assets/javascripts"
 set :images_dir, "images"
 
 activate :blog do |blog|
-  blog.prefix = "remember-lost-species"
+  # blog.prefix = "/"
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
@@ -72,9 +72,9 @@ activate :blog do |blog|
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
-  # blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "remember-lost-species/calendar.html"
+  blog.default_extension = ".md"
+  # blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
@@ -101,4 +101,4 @@ ready do
   end
 end
 
-proxy "index.html", "/remember-lost-species/2018-01-01-dodo.html", layout: :blog
+proxy "index.html", "/2018-01-01-dodo.html", layout: :blog
