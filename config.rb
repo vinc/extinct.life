@@ -61,7 +61,7 @@ set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"
 set :images_dir, "images"
 
-activate :blog do |blog|
+blog = activate :blog do |blog|
   # blog.prefix = "/"
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # blog.sources = "{year}-{month}-{day}-{title}.html"
@@ -101,6 +101,6 @@ ready do
       resource.data.title = resource.locals[resource.locals["page_type"]].to_s
     end
   end
-end
 
-proxy "index.html", "/2018-01-01-dodo.html", layout: :blog
+  redirect "index.html", to: blog.data.articles.last.path
+end
