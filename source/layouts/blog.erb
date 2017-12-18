@@ -27,15 +27,15 @@
           </div>
           <time class="text-muted ml-auto" style="margin-bottom:2px"><%= current_page.data.date %></time>
         </nav>
-        <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center text-center" style="flex:1">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center" style="flex:1">
           <h1><%= current_page.data.title %></h1>
         </div>
       </header>
       <section id="description" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown">
-        <div class="container narrow py-2 py-sm-4">
+        <div class="container narrow py-4">
           <h2 class="text-center mt-4 mb-5">Extinct <%= current_page.data.extinct %>.</h2>
           <%= yield %>
-          <div class="text-center mt-5 mb-4">
+          <div class="text-center my-5">
             <img src="/images/thumbnails/1000x1000_<%= current_page.data.image %>.jpg" alt="<%= current_page.data.title %>" class="img-fluid img-thumbnail rounded cover">
           </div>
         </div>
@@ -45,7 +45,7 @@
     <hr class="d-none">
 
     <section class="d-flex flex-column justify-content-center align-items-center bg-black text-light">
-      <div class="container narrow py-2 py-sm-4">
+      <div class="container narrow py-4">
         <h2 class="text-center mt-4 mb-5">Every day, up to 150 species are lost.</h2>
         <p>We are currently experiencing the greatest wave of extinctions since the disappearance of the dinosaurs. Extinction rates are rising by a factor of up to 1,000 above natural rates according to the <a href="https://www.cbd.int/doc/speech/2007/sp-2007-05-22-es-en.pdf">U.N. Convention on Biological Diversity</a>.</p>
         <p>The single most important cause? <a href="https://en.wikipedia.org/wiki/Human_impact_on_the_environment">Human activities</a>.</p>
@@ -55,7 +55,7 @@
     <hr class="d-none">
 
     <section class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown">
-      <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
+      <div class="container py-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
         <div class="row">
           <div class="col-md mt-3">
             <div class="text-center">
