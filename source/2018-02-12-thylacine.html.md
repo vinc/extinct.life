@@ -3,6 +3,7 @@ title: Thylacine
 image: thylacine
 extinct: since 1936
 date: 2018-02-12
+position: 85% 50%
 ---
 
 The [Thylacine](/2018/02/12/thylacine/) (Thylacinus

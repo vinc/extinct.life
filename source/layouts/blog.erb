@@ -19,7 +19,7 @@
   </head>
   <body>
     <article>
-      <header id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown" style="background:url(/images/thumbnails/2000x2000_<%= current_page.data.image %>.jpg) no-repeat top center fixed;background-size:cover">
+      <header id="name" class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown" style="background:url(/images/thumbnails/2000x2000_<%= current_page.data.image %>.jpg) no-repeat <%= current_page.data.position || "center top" %> fixed;background-size:cover">
         <nav class="navbar navbar-expand-md navbar-light justify-content-start mb-auto">
           <a class="text-muted mr-3" href="/">Extinct.life</a>
           <div class="collapse navbar-collapse">
@@ -27,7 +27,7 @@
           </div>
           <time class="text-muted ml-auto" style="margin-bottom:2px"><%= current_page.data.date %></time>
         </nav>
-        <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
+        <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center text-center" style="flex:1">
           <h1><%= current_page.data.title %></h1>
         </div>
       </header>
@@ -41,6 +41,9 @@
         </div>
       </section>
     </article>
+
+    <hr class="d-none">
+
     <section class="d-flex flex-column justify-content-center align-items-center bg-black text-light">
       <div class="container narrow py-2 py-sm-4">
         <h2 class="text-center mt-4 mb-5">Every day, up to 150 species are lost.</h2>
@@ -48,6 +51,9 @@
         <p>The single most important cause? <a href="https://en.wikipedia.org/wiki/Human_impact_on_the_environment">Human activities</a>.</p>
       </div>
     </section>
+
+    <hr class="d-none">
+
     <section class="fullscreen d-flex flex-column justify-content-center align-items-center bg-light-brown">
       <div class="container py-2 py-sm-4 d-flex flex-column justify-content-center align-items-center" style="flex:1">
         <div class="row">

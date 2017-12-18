@@ -3,6 +3,7 @@ title: Newton's parakeet
 image: newton_parakeet
 extinct: since 1875
 date: 2018-01-15
+position: 60% 0%
 ---
 
 [Newton's parakeet](/2018/01/15/newton-parakeet/)
