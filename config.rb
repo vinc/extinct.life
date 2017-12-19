@@ -57,6 +57,15 @@ activate :external_pipeline,
   source: ".tmp/dist",
   latency: 1
 
+activate :asset_hash
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :rsync
+  deploy.host          = "root@extinct.life"
+  deploy.path          = "/home/user-data/www/extinct.life"
+  deploy.user          = "root"
+end
+
 set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"
 set :images_dir, "images"
@@ -73,7 +82,7 @@ blog = activate :blog do |blog|
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
-  # blog.tag_template = "tag.html"
+  blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
   # blog.paginate = true
   # blog.per_page = 10
@@ -81,26 +90,17 @@ blog = activate :blog do |blog|
   blog.publish_future_dated = true
 end
 
-activate :asset_hash
-
-activate :deploy do |deploy|
-  deploy.deploy_method = :rsync
-  deploy.host          = "root@extinct.life"
-  deploy.path          = "/home/user-data/www/extinct.life"
-  deploy.user          = "root"
-end
-
 ready do
+  redirect "index.html", to: blog.data.articles.last.path
+
   sitemap.resources.each do |resource|
     next unless resource.data.title.nil?
 
     case resource.locals["page_type"]
     when "tag"
-      resource.data.title = resource.locals["tagname"].capitalize
+      resource.data.title = resource.locals["tagname"]
     when "year", "month", "day"
       resource.data.title = resource.locals[resource.locals["page_type"]].to_s
     end
   end
-
-  redirect "index.html", to: blog.data.articles.last.path
 end

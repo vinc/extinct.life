@@ -3,6 +3,7 @@ title: Haast's eagle
 image: haast_eagle
 extinct: around 1400
 date: 2018-02-05
+tags: New Zealand
 position: 15% 0%
 ---
 

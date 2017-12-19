@@ -3,6 +3,7 @@ title: Thylacine
 image: thylacine
 extinct: since 1936
 date: 2018-02-12
+tags: Tasmania, Australia
 position: 85% 50%
 ---
 

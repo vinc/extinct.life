@@ -2,6 +2,7 @@
 title: Newton's parakeet
 image: newton_parakeet
 extinct: since 1875
+tags: Rodrigues, Mascarene Islands
 date: 2018-01-15
 position: 60% 0%
 ---
