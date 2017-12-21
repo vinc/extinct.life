@@ -13,7 +13,7 @@ once lived in the [South Island][2] of New Zealand.
 Haast's eagle became extinct around 1400, after the [moa][3] were hunted to
 extinction by the first Maori.
 
-Read more at [Wikipedia][4]. Illustration by [John Megahan][5].
+*Read more at [Wikipedia][4]. Illustration by [John Megahan][5].*
 
 [1]: /2018/02/05/haast-eagle/
 [2]: https://www.openstreetmap.org/#map=5/-43.149/173.057

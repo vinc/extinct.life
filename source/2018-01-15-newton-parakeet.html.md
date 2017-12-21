@@ -15,7 +15,7 @@ The bird became scarce due to deforestation and perhaps hunting, but it is
 thought that it was finally wiped out by a series of cyclones and storms that
 hit Rodrigues in the late 19th century.
 
-Read more at [Wikipedia][3]. Illustration by [John Gerrard Keulemans][4].
+*Read more at [Wikipedia][3]. Illustration by [John Gerrard Keulemans][4].*
 
 [1]: /2018/01/15/newton-parakeet/
 [2]: https://www.openstreetmap.org/#map=11/-19.7043/63.3945

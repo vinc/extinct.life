@@ -19,8 +19,8 @@ devil. Intensive hunting encouraged by bounties is generally blamed for its
 extinction, but other contributing factors may have been disease, the
 introduction of dogs, and human encroachment into its habitat.
 
-Read more at [Wikipedia][3]. Photography from the [National Archives of
-Australia][4].
+*Read more at [Wikipedia][3]. Photography from the [National Archives of
+Australia][4].*
 
 [1]: /2018/02/12/thylacine/
 [2]: https://www.openstreetmap.org/#map=6/-41.270/144.360

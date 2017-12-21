@@ -16,7 +16,7 @@ The Rodrigues solitaire probably became extinct sometime between the 1730s and
 trade between 1730 and 1750; traders burnt off vegetation, hunted solitaires
 and imported cats and pigs that preyed on eggs and chicks.
 
-Read more at [Wikipedia][4]. Illustration by [John Gerrard Keulemans][5].
+*Read more at [Wikipedia][4]. Illustration by [John Gerrard Keulemans][5].*
 
 [1]: /2018/01/08/rodrigues-solitaire/
 [2]: https://www.openstreetmap.org/#map=11/-19.7043/63.3945
