@@ -91,7 +91,7 @@ blog = activate :blog do |blog|
 end
 
 ready do
-  redirect "index.html", to: blog.data.articles.last.path
+  redirect "index.html", to: blog.data.articles.first.path
 
   sitemap.resources.each do |resource|
     next unless resource.data.title.nil?

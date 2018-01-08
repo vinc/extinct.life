@@ -22,4 +22,4 @@ and imported cats and pigs that preyed on eggs and chicks.
 [2]: https://www.openstreetmap.org/#map=11/-19.7043/63.3945
 [3]: /2018/01/01/dodo/
 [4]: https://en.wikipedia.org/wiki/Rodrigues_solitaire
-[5]: https://ia800201.us.archive.org/BookReader/BookReaderImages.php?zip=/20/items/extinctbirdsatte00roth/extinctbirdsatte00roth_jp2.zip&file=extinctbirdsatte00roth_jp2/extinctbirdsatte00roth_0337.jp2&scale=1&rotate=0
+[5]: https://ia800201.us.archive.org/BookReader/BookReaderImages.php?zip=/20/items/extinctbirdsatte00roth/extinctbirdsatte00roth_jp2.zip&file=extinctbirdsatte00roth_jp2/extinctbirdsatte00roth_0327.jp2&scale=1&rotate=0
