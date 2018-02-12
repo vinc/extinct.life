@@ -10,7 +10,7 @@ position: 85% 50%
 The [Thylacine][1] (Thylacinus cynocephalus) was the largest known carnivorous
 marsupial of modern times.  Native to continental Australia, [Tasmania][2] and
 New Guinea, it is believed to have become extinct in the 20th century. It was
-the last extant member of its family, Thylacinidae.
+the last extant member of the Thylacinidae family.
 
 The thylacine had become extremely rare or extinct on the Australian mainland
 before British settlement of the continent, but it survived on the island of
